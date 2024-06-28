@@ -3,6 +3,7 @@ import Image from "next/image";
 import React, { useState } from "react";
 import { products } from "../data/products";
 import Product from "./Product";
+import Link from "next/link";
 
 export default function Hero() {
   const [filter, setFilter] = useState("all");
