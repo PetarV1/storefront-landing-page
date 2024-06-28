@@ -8,6 +8,7 @@ export const products: Product[] = [
       "The Medusa T-shirt is made from a heavyweight, overdyed jersey, featuring contrasting mesh panels on each side that match the logo embroidery on the back.",
     price: 350,
     imageUrl: "/tshirt.png",
+    collection: "summer",
   },
   {
     id: "2",
@@ -16,5 +17,6 @@ export const products: Product[] = [
       "The Medusa T-shirt is made from a heavyweight, overdyed jersey, featuring contrasting mesh panels on each side that match the logo embroidery on the back.",
     price: 350,
     imageUrl: "/tshirt.png",
+    collection: "summer",
   },
 ];

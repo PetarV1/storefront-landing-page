@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function Product({ product }) {
   return (
-    <>
+    <div>
       <Image
         alt={product.name}
         src={product.imageUrl}
@@ -13,6 +13,6 @@ export default function Product({ product }) {
 
       <h2>{product.name}</h2>
       <p>${product.price.toFixed(2)}</p>
-    </>
+    </div>
   );
 }
