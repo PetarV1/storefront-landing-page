@@ -9,6 +9,11 @@ export const products: Product[] = [
     price: 350,
     imageUrl: "/tshirt.svg",
     collection: "summer",
+    variants: [
+      { id: "1s", name: "Small" },
+      { id: "1m", name: "Medium" },
+      { id: "1l", name: "Large" },
+    ],
   },
   {
     id: "2",
