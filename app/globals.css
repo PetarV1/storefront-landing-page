@@ -23,6 +23,7 @@
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
+  font-family: sans-serif;
 }
 /*
   5. Improve media defaults
@@ -54,4 +55,51 @@ h6 {
 #root,
 #__next {
   isolation: isolate;
+}
+
+select {
+  border: 2px solid #7c3aed;
+  padding: 8px;
+  outline: none;
+}
+select option {
+  background-color: #f0f0f0;
+  padding: 10px;
+}
+
+.heading {
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 20px;
+  letter-spacing: 3px;
+  color: #201f21;
+  position: relative;
+}
+
+.heading::before {
+  background-color: #7c3aed;
+  content: "";
+  display: block;
+  height: 3px;
+  width: 50px;
+  margin-bottom: 5px;
+}
+
+.heading::after {
+  background-color: #7c3aed;
+  content: "";
+  display: block;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: 3px;
+  width: 50px;
+  margin-bottom: -5px;
+}
+
+.imagediv {
+  border-bottom: 4px solid #7c3aed;
+  border-radius: 60%;
+  margin-bottom: 6px;
 }

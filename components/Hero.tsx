@@ -1,9 +1,7 @@
 "use client";
-import Image from "next/image";
 import React, { useState } from "react";
 import { products } from "../data/products";
 import Product from "./Product";
-import Link from "next/link";
 
 export default function Hero() {
   const [filter, setFilter] = useState("all");
@@ -15,17 +13,19 @@ export default function Hero() {
 
   return (
     <div>
-      <select onChange={(e) => setFilter(e.target.value)}>
-        <option value="all">All</option>
-        <option value="summer">Summer</option>
-        <option value="winter">Winter</option>
-      </select>
-      <div className="container mx-auto my-10 bg-cyan-600">
-        <div className="grid md:grid-cols-2 sm:grid-cols-1 lg:grid-cols-4 gap-4">
-          <h1>Product Grid</h1>
-          {filteredProducts.map((product) => (
-            <Product key={product.id} product={product} />
-          ))}
+      <div className="container mx-auto ">
+        <div className="mb-4 mt-16 flex justify-between items-center flex-col">
+          <select onChange={(e) => setFilter(e.target.value)}>
+            <option value="all">All</option>
+            <option value="Accessories">Accessories</option>
+            <option value="Winter clothes">Winter clothes</option>
+            <option value="Summer clothes">Summer clothes</option>
+          </select>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-16">
+            {filteredProducts.map((product) => (
+              <Product key={product.id} product={product} />
+            ))}
+          </div>
         </div>
       </div>
     </div>
