@@ -9,4 +9,12 @@ export const products: Product[] = [
     price: 350,
     imageUrl: "/tshirt.png",
   },
+  {
+    id: "2",
+    name: "T-shirt",
+    description:
+      "The Medusa T-shirt is made from a heavyweight, overdyed jersey, featuring contrasting mesh panels on each side that match the logo embroidery on the back.",
+    price: 350,
+    imageUrl: "/tshirt.png",
+  },
 ];
